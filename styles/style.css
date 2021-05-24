@@ -1,0 +1,339 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: #121f3d;
+}
+.caja-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caja-titulo h1{
+    width: 90%;
+    text-align: center;
+    font-size: 23px;
+    box-shadow: black 0px 0px 20px 2px;
+    border-radius: 10px;
+    background-color: #98ca3f;
+}
+.caja-titulo-cobradores{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.caja-titulo-cobradores h2{
+    margin-left: 14px;
+    color: rgb(252, 252, 252);
+}
+.caja-cobradores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.caja-cobradores div{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(187, 161, 255);
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.caja-cobradores div:hover{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(109, 51, 255);
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.caja-imagen{
+    width: 35% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
+.caja-imagen img{
+    width: 90% !important;
+    border-radius: 50px;
+}
+.caja-detalles{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;
+    width: 60% !important;
+    
+}
+.caja-detalles p{
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    color: #345202;
+    font-weight: bold;
+}
+.caja-detalles h3{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 19px;
+    text-align: center;
+    color: black;
+}
+a{
+    text-decoration: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-agregar-cobrador{
+    text-decoration: none;
+    color: black;
+    background-color:#98ca3f ;
+    line-height: 7px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font: 17px;
+    font-weight: bold;
+}
+.caja-titulo-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 10px;
+}
+label{
+    color: white;
+}
+.caja-registro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registro{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+}
+.registro input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+.boton-registro{
+    text-decoration: none;
+    color: black;
+    background-color:#98ca3f ;
+    line-height: 7px;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 12px;
+}
+.link-creditos{
+    width: 90% !important;
+}
+.detalles-credito{
+    width: 100%;
+    display: flex;
+    justify-content: start !important;
+    align-items: flex-start !important;
+    flex-direction: column;
+    padding-left: 5px;
+}
+.detalles-credito p{
+    margin: 0%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.caja-cuotas{
+    width: 90% !important;
+    background-color: rgb(187, 161, 255) !important;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 12px;
+    padding-bottom: 5px;
+}
+.caja-cuota{
+    margin-left: 2.2%;
+    margin-bottom: 7px;
+    width:10%;
+    height:40px;
+}
+.comentarios{
+    
+    width: 100%;
+    color:rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.comentarios-div{
+    
+    width: 100%;
+    color:rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.comentarios-div p{
+    padding: 5px;
+    padding-right: 25px;
+    width: 85%;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 8px;
+    line-height: 20px;
+}
+.titulo-comentarios{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 14px;
+}
+.titulo-comentarios h3{
+    margin: 0;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.caja-titulo-cobradores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.new-comentarios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.new-comentarios label{
+    font-size: 18px !important;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.new-comentarios textarea{
+    line-height: 20px;
+    font-size: 18px;
+}
+.boton-comentario{
+    width: 150px;
+    line-height: 20px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: #98ca3f;
+}
+
+.informe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.informe a{
+    line-height: 30px;
+    width: 200px;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.lista a{
+    line-height: 30px;
+    width: 200px;
+    background-color: rgb(1, 1, 255);
+    color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.caja-forma-pago{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forma-pago{
+    margin-top: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.forma-pago button{
+    width: 180px;
+    line-height: 30px;
+    background-color: yellowgreen;
+    border:none;
+    border-radius: 10px;
+    color: black;
+}
+.forma-pago select{
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.forma-pago h3{
+    color: white;
+    font-size: 18px;
+}
+.informe-dia{
+    background-color: #98ca3f;
+    line-height: 40px;
+    font-size: 18px;
+    color: black;
+    width: 90%;
+    margin-left: 5%;
+    border-bottom-right-radius:15px;
+    border-top-right-radius:15px;
+    margin-bottom: 15px;
+}
