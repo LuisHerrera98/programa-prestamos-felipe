@@ -22,8 +22,12 @@
     <div class="caja-titulo">
         <h1>Perfil de <?php echo $row['nombre'] ?></h1>
     </div>
+    <div class="informe">
+        <a style="background-color: red;" href="../index.php">VOLVER AL INICIO</a>
+    </div>
     <br>
     <br>
+    
     <div class="informe">
         <a href="informesDiario.php?id=<?php echo $id ?>">Ver informes diarios</a>
     </div>

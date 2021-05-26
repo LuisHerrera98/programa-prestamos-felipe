@@ -33,7 +33,7 @@
     <?php
     // include_once "db_empresa.php";
     include_once "../controllers/conexion.php";
-    $query2 = "SELECT * FROM creditos WHERE cobrador_id='$id';";
+    $query2 = "SELECT * FROM creditos WHERE cobrador_id='$id' ORDER BY id DESC ;";
     $res2 = mysqli_query($conexion, $query2);
     while ($row2 = mysqli_fetch_assoc($res2)) {
     ?>

@@ -76,11 +76,14 @@
     }
 ?>
 
-    <h1 style="color:white; margin-left:20px">Informes diarios</h1>
+    <h1 style="color:white; margin-left:20px; margin-bottom:10px">Informes diarios</h1>
+    <div class="informe">
+        <a style="background-color: red;" href="../index.php">VOLVER AL INICIO</a>
+    </div>
     <?php
     include_once "../controllers/conexion.php";
 //WHERE id='$id'
-    $query = "SELECT * FROM cobros ;";
+    $query = "SELECT * FROM cobros ORDER BY id DESC;";
     $res = mysqli_query($conexion, $query);
     $fechaCambiante = "";
     while($row = mysqli_fetch_assoc($res)){

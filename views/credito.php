@@ -34,9 +34,8 @@
         $resCobrador = mysqli_query($conexion, $queryCobrador);
         $rowCobrador = mysqli_fetch_assoc($resCobrador);
     ?>
-    <div class="caja-titulo-cobradores" style="font-size:18px">
-        <h2>Base de <?php echo $rowCobrador['nombre'] ?> $<?php echo $rowCobrador['base'] ?></h2>
-    </div>
+    
+<br>    
     <hr>
     <div class="caja-titulo-cobradores">
         <h2>Cuotas de $<?php echo $row['valorCuota'] ?></h2>
@@ -108,6 +107,25 @@
             Agregar comentario
         </button>
     </form>
+
+    <?php 
+    $estadoConsulta = "falta";
+    $query4 = "SELECT * FROM cuotas WHERE credito_id='$id' and estado='$estadoConsulta';";
+    $res4 = mysqli_query($conexion, $query4);
+    $row4 = mysqli_fetch_assoc($res4);
+    if($row4){?>
+        <div class="titulo-comentarios">
+        <h3>Aun no se puede borrar este credito, faltan pagar cuotas!</h3>
+    </div>
+    <?php 
+    }else{?>
+        <div class="informe">
+        <a style="background-color: red; margin-bottom:30px; margin-top:0; font-size:20px" 
+        href="../controllers/borrarCredito.php?idCredito=<?php echo $id ?>">BORRAR CREDITO</a>
+    </div>
+    <?php
+    }
+    ?>
     
 </body>
 </html>

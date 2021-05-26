@@ -29,9 +29,8 @@
                 <div class="caja-imagen">
                     <img src="images/german.jpg" alt="">
                 </div>
-                <div class="caja-detalles">
-                    <h3><?php echo strtoupper($row['nombre']) ?></h3>
-                    <p>BASE: $<?php echo $row['base'] ?></p>
+                <div class="caja-detalles" style="margin: 0;">
+                    <h3 style="margin:0;"><?php echo strtoupper($row['nombre']) ?></h3>
                 </div>
             </div>
         </a>
