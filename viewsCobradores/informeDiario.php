@@ -11,7 +11,7 @@
 </head>
 <body>
     <?php
-
+    $total = 0;
     date_default_timezone_set('America/Argentina/Buenos_Aires');
     setlocale (LC_TIME, "es_RA");
     $hora = date("l d \of-F-Y");
@@ -91,7 +91,7 @@
     <h1 style="color:white; margin-left:20px;"><?php echo $fecha ?></h1>
 
     <div class="informe">
-        <a style="background-color: red;" href="../index.php">VOLVER AL INICIO</a>
+        <a style="background-color: red;" href="../CobradoresIndex.php">VOLVER AL INICIO</a>
     </div>
     <?php
         include_once "../controllers/conexion.php";
@@ -103,7 +103,7 @@
                 <h2 style="margin:0; font-size:24px; color:white">Base : $<?php echo $rowDia['base']; ?> </h2>
             </div>
         <?php }else{ ?>
-            <form action="../controllers/baseFecha.php" class="new-comentarios" method="POST">
+            <form action="../controllersCobrador/baseFecha.php" class="new-comentarios" method="POST">
                 <label for="" style="margin:0; margin-bottom:10px">Ingresa tu base al comenzar hoy</label>
                 <input type="number" name="base" style="font-size:20px; text-align:center;">
 
@@ -115,6 +115,9 @@
                 </button>
             </form>
        <?php } ?>
+        
+            
+            
     
     <hr>
     <h2 style="color:white; margin-left:20px">Pagos en efectivo</h2>
@@ -190,7 +193,7 @@
         }
     }
 </script>
-    <form method="POST" class="new-comentarios" action="../controllers/agregarGasto.php">
+    <form method="POST" class="new-comentarios" action="../controllersCobrador/agregarGasto.php">
         <label for="" style="margin-top:30px;">Agregar gasto</label>
 
         <input type="text" name="comentario" style="font-size:18px" placeholder="detalle">

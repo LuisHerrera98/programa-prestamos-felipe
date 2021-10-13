@@ -24,7 +24,7 @@
     $res = mysqli_query($conexion, $query);
     while ($row = mysqli_fetch_assoc($res)) {
     ?>
-        <a style="width:90%;" href="views/perfilCobrador.php?id=<?php echo $row['id'] ?>">
+        <a style="width:90%;" href="viewsCobradores/perfilCobrador.php?id=<?php echo $row['id'] ?>">
             <div style="height:40px;">
                 <div class="caja-detalles" style="margin: 0;">
                     <h3 style="margin:0;"><?php echo strtoupper($row['nombre']) ?></h3>
@@ -34,9 +34,7 @@
         <?php
     }
         ?>
-        <a href="views/registro.php" class="btn-agregar-cobrador">
-            Agregar Cobrador
-        </a>
+        
     </div>
 </body>
 </html>

@@ -11,24 +11,36 @@
 </head>
 <body>
     <div class="caja-titulo">
-        <h1>Bienvenido Felipe</h1>
+        <h1>Nuevo Credito</h1>
     </div>
     <div class="caja-titulo-registro">
-        <h2>Agregar nuevo cobrador</h2>
+        <h2>Agregar nuevo credito</h2>
     </div>
     <div class="caja-registro">
-        <form class="registro" action="../controllers/registrarCobrador.php" method="POST">
+        <form class="registro" action="../controllersCobrador/registrarCredito.php" method="POST">
             <label for="">Ingrese el nombre</label>
             
             <input type="text" name="nombre">
 
+            <label for="">Ingrese el credito</label>
+            
+            <input type="number" name="credito">
+
+            <label for="">Cantidad de cuotas</label>
+            
+            <input type="number" name="cuotas">
+
+            <label for="">Valor de la cuota</label>
+            
+            <input type="number" name="valorCuota">
+
+            <input type="hidden" name="cobrador" value="<?php echo $_GET['id'] ?>">
+
             <button class="boton-registro" type="submit"> 
                 Agregar
             </button>
-            <a style="font-weight: bold; margin-top:20px; padding-left:38px; padding-right:38px" href="../index.php" class="btn-agregar-cobrador">
-            volver
-            </a>
         </form>
     </div>
+    
 </body>
 </html>
